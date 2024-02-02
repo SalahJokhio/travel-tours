@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourisam Web</title>
+
+    <Style>
+
+        body{
+            background-color: black;
+        }
+
+
+            nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #6c56fc;
+  height: 55px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none; 
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+}
+
+.logo-container {
+  position: absolute;
+  top: 0.1;
+  left: 0;
+}
+
+.second-container {
+  border: solid 1px white;
+  height: 600px;
+  width: 1200px; /* Adjust as needed */
+  margin-top: 30px;
+  margin-left: 30px;
+  display: flex;
+  /* justify-content: flex-end; */
+  /* flex-wrap: wrap; */
+  
+}
+
+.before-third{
+    /* border: solid 5px blue; */
+    height: 600px;
+    width: 600px;
+    background-color: rgb(7, 103, 103);
+}
+
+.inner-third{
+    border: solid 3px rgb(255, 254, 254);
+    height: 500px;
+    width: 400px;
+    margin-top: 50px;
+    margin-left: 90px;
+    
+
+}
+.content {
+  /* Center both horizontally and vertically */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.details-button{
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+
+
+.third-container {
+  border: solid 1px white;
+  width: 600px;
+  height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Distribute items with equal space around them */
+}
+
+.container-img {
+  width: calc(50% - 20px); /* Adjusted width considering margin */
+  height: auto;
+  
+}
+
+
+
+
+
+.data-second-container{
+    border: solid 1px white;
+    height: 500px;
+    width: 700px;
+}
+
+.inside-container{
+    border: solid 1px white;
+    height: 600px;
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-img{
+    border: solid 1px white;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    
+}
+
+.fa-solid{
+  color: yellow;
+}
+
+
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+}
+
+@media screen and (min-width: 1025px) {
+
+}
+@media screen and (max-width: 768px) {
+  nav ul li a {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  nav ul li {
+    background-image: url("path/to/logo1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 10px; 
+  }
+
+  nav ul li:nth-child(2) {
+    background-image: url("path/to/logo2.png");
+  }
+
+  
+}
+/* Default logo visibility */
+.logo-container {
+  display: block;
+}
+
+/* Hide logo on smaller screens */
+@media screen and (max-width: 768px) {
+  .logo-container {
+    display: none;
+  }
+}
+
+
+
+
+
+    </Style>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <span class="logo-container">
+                    <img src="./logo.png" alt="My Logo">
+                </span>
+                <ul>
+                    <li><i class="fa-solid fa-house"></i><a href="./index.html">Home</a> </li>
+                    <li><i class="fa-solid fa-address-book"></i><a href="./contact.html">Contact</a></li>
+                    <li><i class="fa-solid fa-gift"></i><a href="/offers.html">Offers</a></li>
+                    <li><i class="fa-solid fa-address-card"></i><a href="./about.html">About</a></li>
+                </ul>
+            </nav>
+        
+    </header>
+
+    <div class="second-container">
+      <div class="before-third"> <div class="inner-third">
+        <h4 class="content">ABOUT COMPANY</h4>
+        <br>
+        <h2 class="content">Travel Tours</h2>
+        <br>
+        <p class="content">Felis imperdiet proin fermentum leo. Pretium aenean pharetra magna ac placerat vestibulum. Eu tincidunt tortor aliquam nulla facilisi cras fermentum. Metus vulputate eu scelerisque felis imperdiet. At tellus at urna condimentum.</p>
+      <br>
+    <button class="details-button">learn More</button>
+    </div></div>
+      <div class="third-container">
+      <div class="container-img"><img src="./beach.avif" alt="beach" width="300px" height="300px"></div>
+      <div class="container-img"><img src="./beaches.avif" alt="beaches picture" height="300px" width="300px"></div>
+      <div class="container-img"><img src="./green.avif" alt="green beach" height="300px" width="300px"></div>
+      <div class="container-img"><img src="./beach2.avif" alt="beaches" height="300px" width="300px"></div>
+    </div>
+    </div>
+    
+        
+    </div>
+    <!-- <div style="background-color: aqua;" class="data-second-container"></div>
+        <div><img src="./beachtree.avif" alt="trees" height="300px" width="300px"></div>
+        <div><img src="./beaches.avif" alt="beaches" height="300px" width="300px"></div>
+        <div><img src="./beach.avif" alt=" beach" height="300px" width="300px"></div>
+        <div><img src="./elephent.avif" alt="elephents" height="300px" width="300px"></div>
+</div> -->
+
+
+<div class="end"> Template created with <a href="./thekeydaar.html">Thekeydaar</a></div>
+
+<script src="https://kit.fontawesome.com/1d97dd4fe8.js" crossorigin="anonymous"></script>
+</body>
+</html>
